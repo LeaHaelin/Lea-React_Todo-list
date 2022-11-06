@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/src/images/bg-mobile-light.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 200px;
+  background-color: #FAFAFA;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container.dark {
+  background-image: url(/src/images/bg-mobile-dark.jpg);
+  background-color: #171823;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 327px;
+  height: 100%;
+}
+
+.notation {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #9495A5;
+}
+
+.notation.dark {
+  color: #5B5E7E;
+}
+
+@media (min-width: 760px) {
+  .content {
+    max-width: 500px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    background-image: url(/src/images/bg-desktop-light.jpg);
+  }
+  .container.dark {
+    background-image: url(/src/images/bg-desktop-dark.jpg);
+  }
+  .content {
+    max-width: 540px;
+  }
+}
+.header {
+  margin: 0 auto;
+  padding: 48px 0px 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__logo,
+.header__mode {
+  height: 20px;
+}
+
+.header__mode:hover {
+  cursor: pointer;
+}
+
+.input {
+  margin: 0 auto;
+  position: relative;
+}
+
+.input__new {
+  width: 100%;
+  height: 48px;
+  padding: 18px 52px;
+  background: #FFFFFF;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+  border-radius: 5px;
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.input__new::placeholder {
+  color: #9495A5;
+  font-size: 12px;
+}
+
+.input__new:hover {
+  cursor: pointer;
+}
+
+.input__new:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.4039215686);
+}
+
+.input__radio {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E3E4F1;
+  border-radius: 50px;
+  position: absolute;
+  top: 14px;
+  left: 20px;
+}
+
+.input__radio.dark {
+  border: 1px solid #393A4B;
+}
+
+.input__new.dark {
+  background: #25273D;
+  color: #C8CBE7;
+  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1440px) {
+  .input__new {
+    height: 64px;
+    padding: 20px 52px;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+    border-radius: 5px;
+    border: none;
+    font-family: "Josefin Sans", sans-serif;
+  }
+}
+.list {
+  margin: 16px auto;
+  height: auto;
+  background-color: #FFFFFF;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+  border-radius: 5px;
+}
+
+.list.dark {
+  background: #25273D;
+  color: #C8CBE7;
+  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+}
+
+.list__todo {
+  height: 52px;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E3E4F1;
+}
+
+.list__todo.dark {
+  border-bottom: 1px solid #393A4B;
+}
+
+.list__radio {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E3E4F1;
+  border-radius: 50px;
+  margin-right: 12px;
+  background: url(/src/images/icon-check.svg), linear-gradient(135deg, #55DDFF 0%, #C058F3 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.list__radio.dark {
+  border: 1px solid #393A4B;
+}
+
+.list__text--input {
+  border: none;
+  width: 235px;
+  height: 20px;
+  margin-right: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #494C6B;
+  background-color: transparent;
+}
+
+.list__text--input:focus {
+  outline: none;
+}
+
+.list__delet {
+  width: 12px;
+  height: 12px;
+}
+
+.list__control {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px 20px;
+}
+
+.list__clear {
+  border: none;
+  background-color: transparent;
+}
+
+.list__text--input:hover,
+.list__radio:hover,
+.list__delet:hover,
+.list__clear:hover {
+  cursor: pointer;
+}
+
+.list__count,
+.list__clear {
+  font-size: 12px;
+  color: #9495A5;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.list__status--desktop {
+  display: none;
+}
+
+.status {
+  margin: 0 auto;
+  height: 48px;
+  padding: 15px 80px;
+  display: flex;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+  border-radius: 5px;
+}
+
+.status.dark {
+  background: #25273D;
+  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+}
+
+.status__button {
+  border: none;
+  background: transparent;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #9495A5;
+}
+
+.status__button.dark {
+  color: #5B5E7E;
+}
+
+.status__button:hover {
+  cursor: pointer;
+  color: #494C6B;
+}
+
+.status__button:focus {
+  color: #3A7CFD;
+}
+
+.status__button.dark:hover {
+  color: #E3E4F1;
+}/*# sourceMappingURL=app.css.map */

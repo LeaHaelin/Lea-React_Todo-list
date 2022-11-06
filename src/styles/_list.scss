@@ -1,0 +1,91 @@
+.list {
+    margin: 16px auto;
+    height: auto;
+    background-color: #FFFFFF;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+    border-radius: 5px;
+}
+
+.list.dark {
+    background: #25273D;
+    color: #C8CBE7;
+    box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+}
+
+.list__todo {
+    height: 52px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E3E4F1;
+}
+
+.list__todo.dark {
+    border-bottom: 1px solid #393A4B;
+}
+
+.list__radio {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E3E4F1;
+    border-radius: 50px;
+    margin-right: 12px;
+    background: url(/src/images/icon-check.svg), linear-gradient(135deg, #55DDFF 0%, #C058F3 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list__radio.dark {
+    border: 1px solid #393A4B;
+}
+
+.list__text--input {
+    border: none;
+    width: 235px;
+    height: 20px;
+    margin-right: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #494C6B;
+    background-color: transparent;
+}
+
+.list__text--input:focus {
+    outline: none;
+}
+
+.list__delet {
+    width: 12px;
+    height: 12px;
+}
+
+.list__control {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px 20px;
+}
+
+.list__clear {
+    border: none;
+    background-color: transparent;
+}
+
+.list__text--input:hover,
+.list__radio:hover,
+.list__delet:hover,
+.list__clear:hover {
+    cursor: pointer;
+}
+
+.list__count,
+.list__clear {
+    font-size: 12px;
+    color: #9495A5;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.list__status--desktop {
+    display: none;
+}
+
+@media(min-width:1440px) {}
