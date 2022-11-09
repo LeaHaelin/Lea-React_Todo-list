@@ -15,7 +15,7 @@ function App() {
         <div className="content">
           <Header isLight={isLight} setIsLight={setIsLight} />
           <Input isLight={isLight} setIsLight={setIsLight} />
-          <List isLight={isLight} setIsLight={setIsLight} />
+          <List isLight={isLight} setIsLight={setIsLight} Status={Status} />
           <Status isLight={isLight} setIsLight={setIsLight} />
           <p className={isLight ? "notation" : "notation dark"}>Drag and drop to reorder list</p>
         </div>

@@ -15,4 +15,17 @@
     cursor: pointer;
 }
 
-@media(min-width:1440px) {}
+@media(min-width:1440px) {
+    .header {
+        padding: 70px 0px 58px 0;
+    }
+
+    .header__logo {
+        height: 30px;
+    }
+
+    .header__mode {
+        height: 26px;
+    }
+
+}

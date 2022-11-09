@@ -40,4 +40,8 @@
     color: #E3E4F1;
 }
 
-@media(min-width:1440px) {}
+@media(min-width:1440px) {
+    .status {
+        display: none;
+    }
+}

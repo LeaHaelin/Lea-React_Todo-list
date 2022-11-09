@@ -16,7 +16,6 @@
     height: 52px;
     padding: 16px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #E3E4F1;
 }
@@ -41,7 +40,6 @@
 }
 
 .list__text--input {
-    border: none;
     width: 235px;
     height: 20px;
     margin-right: 20px;
@@ -63,6 +61,7 @@
     display: flex;
     justify-content: space-between;
     padding: 16px 20px 20px;
+    height: 50px;
 }
 
 .list__clear {
@@ -88,4 +87,47 @@
     display: none;
 }
 
-@media(min-width:1440px) {}
+@media(min-width:1440px) {
+    .list {
+        margin: 24px auto;
+    }
+
+    .list__todo {
+        height: 64px;
+        padding: 20px 24px;
+    }
+
+    .list__radio {
+        width: 24px;
+        height: 24px;
+        margin-right: 24px;
+    }
+
+    .list__text--input {
+        border: none;
+        width: 235px;
+        height: 24px;
+        width: 400px;
+    }
+
+    .list__delet {
+        width: 18px;
+        height: 18px;
+    }
+
+    .list__control {
+        padding: 16px 24px 20px;
+    }
+
+    .list__count,
+    .list__clear {
+        font-size: 14px;
+    }
+
+    .list__status--desktop {
+        display: block;
+        width: 166px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

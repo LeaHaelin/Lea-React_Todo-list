@@ -46,7 +46,7 @@
 
 @media(min-width:760px) {
     .content {
-        max-width: 500px;
+        max-width: 5 00px;
     }
 
 }
@@ -54,6 +54,7 @@
 @media(min-width:1440px) {
     .container {
         background-image: url(/src/images/bg-desktop-light.jpg);
+        background-size: 100% 300px;
     }
 
 
